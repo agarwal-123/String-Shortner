@@ -13,7 +13,7 @@ export default function CustomPaginationActionsTable() {
     console.log(n, "rf");
     // var resp = await fetch("http://localhost:3000/");
     // var ans = await resp.json();
-    fetch("http://localhost:3000/encode/?input="+n)
+    fetch("https://string-shortner-api.herokuapp.com/encode/?input="+n)
       .then((response) => response.text())
       .then((resp) => {
         console.log(resp);
@@ -29,7 +29,7 @@ export default function CustomPaginationActionsTable() {
     console.log(n, "rf");
     // var resp = await fetch("http://localhost:3000/");
     // var ans = await resp.json();
-    fetch("http://localhost:3000/decode/?input="+n)
+    fetch("https://string-shortner-api.herokuapp.com/decode/?input="+n)
       .then((response) => response.text())
       .then((resp) => {
         console.log(resp);
