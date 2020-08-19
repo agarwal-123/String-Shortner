@@ -52,6 +52,10 @@ export default function CustomPaginationActionsTable() {
       alert("Invalid Input!! String can have a maximum size of 6, and consist of small letter alphabets.");
       return;
     }
+    if(inputStr.length && inputStr[0]=='a') {
+      alert("First letter of string should never be 'a' ");
+      return;
+    }
     fetchData(inputStr);
   }
 
